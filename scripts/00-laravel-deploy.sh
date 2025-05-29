@@ -8,9 +8,6 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
-echo "Generating key..."
-php artisan key:generate --show
-
 echo "Running npm install..."
 npm install;
 
