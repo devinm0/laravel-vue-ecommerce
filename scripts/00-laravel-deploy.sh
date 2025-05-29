@@ -15,4 +15,4 @@ echo "Running npm run build..."
 npm run build;
 
 echo "Running migrations..."
-php artisan migrate --force
+php artisan migrate --seed --force
