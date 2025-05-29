@@ -8,6 +8,9 @@ php artisan config:cache
 echo "Caching routes..."
 php artisan route:cache
 
+echo "Generating key..."
+php artisan key:generate --show
+
 echo "Running npm install..."
 npm install;
 
@@ -15,4 +18,4 @@ echo "Running npm run build..."
 npm run build;
 
 echo "Running migrations..."
-php artisan migrate --seed --force
+php artisan migrate --seed --force && php artisan db:seed --force
